@@ -249,27 +249,23 @@ Sitemap: ${siteUrl}/sitemap.xml
 
 function buildSitemapXml(siteUrl, posts, projects) {
   const staticPages = ['/', '/about', '/work', '/projects', '/writing', '/now', '/contact'];
-  const today = '2026-11-24';
   const urls = [];
 
   for (const p of staticPages) {
     urls.push(`  <url>
     <loc>${siteUrl}${p}</loc>
-    <lastmod>${today}</lastmod>
   </url>`);
   }
 
   for (const pr of projects) {
     urls.push(`  <url>
     <loc>${siteUrl}/projects/${esc(pr.slug)}</loc>
-    <lastmod>${today}</lastmod>
   </url>`);
   }
 
   for (const post of posts.filter((x) => x.published !== false)) {
     urls.push(`  <url>
     <loc>${siteUrl}/writing/${esc(post.slug)}</loc>
-    <lastmod>${esc(post.lastmod || today)}</lastmod>
   </url>`);
   }
 
