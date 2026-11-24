@@ -1,5 +1,128 @@
 [
-{"slug":"why-broken-technology-still-has-value","title":"Why Broken Technology Still Has Value","category":"Technology","date":"2026-01-01","readingTime":3,"excerpt":"A cracked screen is a repair problem, not a death sentence. SAMPLE DRAFT: replace with your own writing.","body":[{"t":"p","x":"SAMPLE DRAFT. Replace this text with your real article."},{"t":"h","x":"The idea"},{"t":"p","x":"Broken does not mean worthless. Unwanted does not mean useless. That is the starting observation behind TechBack."},{"t":"h","x":"A tiny example"},{"t":"code","x":"const value = (device) => device.parts + device.data - device.waste;"}]},
-{"slug":"the-difference-between-coding-and-engineering","title":"The Difference Between Coding and Engineering","category":"Engineering","date":"2026-01-02","readingTime":4,"excerpt":"Code is the output. Engineering is deciding what to build and living with it. SAMPLE DRAFT.","body":[{"t":"p","x":"SAMPLE DRAFT. Replace this text."},{"t":"h","x":"Beyond syntax"},{"t":"p","x":"Users, operations, economics, security and scale all sit outside the editor."}]},
-{"slug":"why-i-prefer-building-prototypes","title":"Why I Prefer Building Prototypes","category":"Building","date":"2026-01-03","readingTime":3,"excerpt":"A working prototype teaches more than a perfect diagram. SAMPLE DRAFT.","body":[{"t":"p","x":"SAMPLE DRAFT. Replace this text."},{"t":"h","x":"Build, break, learn"},{"t":"p","x":"First versions are experiments. Expect to rewrite them."}]}
+  {
+    "slug": "why-broken-technology-still-has-value",
+    "title": "Why Broken Technology Still Has Value",
+    "category": "Technology",
+    "date": "2026-01-15",
+    "readingTime": 4,
+    "published": true,
+    "excerpt": "A cracked screen or aging battery is an engineering and logistics problem, not a reason to discard functional hardware. Notes on circular technology and device recovery.",
+    "image": "/assets/og-card.svg",
+    "imageAlt": "Illustration representing circular technology and device lifecycle recovery at TechBack",
+    "relatedProjects": ["techback", "access-point"],
+    "body": [
+      {
+        "t": "p",
+        "x": "Across homes, offices, and university campuses, drawers are full of laptops and phones that stopped being used after a single component failed. A cracked display, a degraded battery, or a faulty charging port often turns an otherwise capable machine into electronic waste."
+      },
+      {
+        "t": "h",
+        "x": "The observation behind TechBack"
+      },
+      {
+        "t": "p",
+        "x": "Broken does not mean worthless, and unwanted does not mean useless. That simple observation is the foundation behind TechBack, where I work as a developer building software around device recovery, repair, refurbishment, and lifecycle management."
+      },
+      {
+        "t": "p",
+        "x": "When we treat hardware strictly as disposable consumer goods, two problems happen at once: electronic waste accumulates without structured recovery, and students or small businesses who need affordable computing tools are priced out of functional equipment."
+      },
+      {
+        "t": "h",
+        "x": "Thinking in lifecycles instead of single owners"
+      },
+      {
+        "t": "p",
+        "x": "From a systems perspective, a device has residual value across multiple stages: whole-unit refurbishment, component harvesting, verified resale, or responsible material recovery."
+      },
+      {
+        "t": "code",
+        "x": "const residualValue = (device) =>\n  device.functionalModules + device.repairabilityScore - device.refurbishmentCost;"
+      },
+      {
+        "t": "h",
+        "x": "Where software fits in"
+      },
+      {
+        "t": "p",
+        "x": "Circular technology is not just a hardware repair workshop—it is an information and trust problem. People need transparent diagnostics, predictable repair workflows, clear grading for refurbished devices, and reliable tracking. Building the software layer that connects device owners, technicians, and buyers is what turns an informal repair habit into a scalable circular ecosystem."
+      }
+    ]
+  },
+  {
+    "slug": "the-difference-between-coding-and-engineering",
+    "title": "The Difference Between Coding and Engineering",
+    "category": "Engineering",
+    "date": "2026-02-02",
+    "readingTime": 4,
+    "published": true,
+    "excerpt": "Writing syntax is only the visible output. Software engineering is understanding the problem, the user's reality, the economics, and living with the system you build.",
+    "image": "/assets/og-card.svg",
+    "imageAlt": "Notes on software engineering versus coding by Kim Sinzala",
+    "relatedProjects": ["techback", "link-mine"],
+    "body": [
+      {
+        "t": "p",
+        "x": "When you first start learning Computer Science, it is easy to measure progress by how many languages you can write or how quickly you can put a user interface on the screen. But the longer I build real systems, the clearer the gap becomes between writing code and practicing engineering."
+      },
+      {
+        "t": "h",
+        "x": "Code is the output, not the whole job"
+      },
+      {
+        "t": "p",
+        "x": "Anyone can generate syntax that compiles or renders a page. Engineering starts earlier and lasts longer: it is asking why a problem exists, who actually experiences it, what constraints they live under, and whether software is even the right bottleneck to solve."
+      },
+      {
+        "t": "h",
+        "x": "Everything outside the code editor"
+      },
+      {
+        "t": "p",
+        "x": "Users, operations, local infrastructure, payment habits, database integrity, security, and unit economics all sit outside the code editor. In Zambia and across Africa, building software that ignores network reliability, device constraints, or how people actually transact leads to impressive demos that nobody uses."
+      },
+      {
+        "t": "h",
+        "x": "Living with what you ship"
+      },
+      {
+        "t": "p",
+        "x": "Coding finishes when the feature works on your machine. Engineering continues when real data hits the database, edge cases appear, requirements shift, and the system has to remain understandable and sustainable months later."
+      }
+    ]
+  },
+  {
+    "slug": "why-i-prefer-building-prototypes",
+    "title": "Why I Prefer Building Prototypes Over Endless Planning",
+    "category": "Building",
+    "date": "2026-02-18",
+    "readingTime": 3,
+    "published": true,
+    "excerpt": "A working prototype exposes what you actually understand—and what foundations you are missing—faster than months of untested diagrams.",
+    "image": "/assets/og-card.svg",
+    "imageAlt": "Prototyping and iterative software development workflow",
+    "relatedProjects": ["tripper", "link-mine"],
+    "body": [
+      {
+        "t": "p",
+        "x": "It is tempting to spend months polishing a concept in notebooks and slide decks where everything works in theory. In practice, an untested plan hides its hardest assumptions until the moment it meets a real user or a real technical constraint."
+      },
+      {
+        "t": "h",
+        "x": "Prototypes expose missing foundations"
+      },
+      {
+        "t": "p",
+        "x": "Turning an idea into a working prototype is the fastest way I know to discover what I actually understand. Almost every prototype I build eventually sends me back to computer science fundamentals—database indexing, network behaviour, algorithmic efficiency, or data modelling—with a concrete reason to learn them deeply."
+      },
+      {
+        "t": "h",
+        "x": "Build, test, break, improve"
+      },
+      {
+        "t": "p",
+        "x": "My workflow follows a simple loop: Idea → research → prototype → testing → failure → improvement → product. First versions are experiments. When a prototype breaks or a test reveals a weak assumption, that is not wasted effort—it is the shortest path to building something that actually works."
+      }
+    ]
+  }
 ]

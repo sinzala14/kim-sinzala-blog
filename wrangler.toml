@@ -2,9 +2,13 @@ name = "kim-sinzala-blog"
 main = "worker.js"
 compatibility_date = "2025-01-01"
 
+[vars]
+SITE_URL = "https://kim-sinzala-blog.voxreadstudio.workers.dev"
+
 [assets]
 directory = "./public"
 binding = "ASSETS"
 html_handling = "none"
 not_found_handling = "none"
 run_worker_first = true
+
