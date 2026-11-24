@@ -48,6 +48,10 @@ function renderPage(file, pathname, customMeta = null, customTransforms = null) 
   return html;
 }
 
+app.get('/google9ad48d50885f2ede.html', (req, res) => {
+  res.type('text/html').send('google-site-verification: google9ad48d50885f2ede.html');
+});
+
 app.get(/\.html$/, (req, res) => res.redirect(301, req.path.replace(/\.html$/, '').replace(/^\/index$/, '/')));
 
 app.get('/robots.txt', (req, res) => {

@@ -52,6 +52,14 @@ export default {
     const siteUrl = (env.SITE_URL || DEFAULT_SITE_URL).replace(/\/+$/, '');
     const publishedPosts = posts.filter((p) => p.published !== false);
 
+    // Google Search Console verification file (do not redirect .html)
+    if (pathname === '/google9ad48d50885f2ede.html') {
+      return new Response('google-site-verification: google9ad48d50885f2ede.html', {
+        status: 200,
+        headers: { 'content-type': 'text/html; charset=utf-8' }
+      });
+    }
+
     // Redirect .html URLs to clean routes
     if (pathname.endsWith('.html')) {
       const clean = pathname.replace(/\.html$/, '').replace(/^\/index$/, '/');
