@@ -1,1 +1,17 @@
-{"name":"personal-blog","version":"1.0.0","description":"Kim Sinzala personal blog and portfolio","main":"server.js","scripts":{"start":"node server.js"},"dependencies":{"express":"^4.19.2"}}
+{
+  "name": "personal-blog",
+  "version": "1.0.0",
+  "description": "Kim Sinzala personal blog and portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev:cf": "npx wrangler dev",
+    "deploy": "npx wrangler deploy"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}
