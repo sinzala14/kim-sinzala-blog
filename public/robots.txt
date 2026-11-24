@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://kim-sinzala-blog.voxreadstudio.workers.dev/sitemap.xml
