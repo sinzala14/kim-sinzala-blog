@@ -248,24 +248,14 @@ Sitemap: ${siteUrl}/sitemap.xml
 }
 
 function buildSitemapXml(siteUrl, posts, projects) {
-  const staticPages = [
-    ['/', '1.0', 'weekly'],
-    ['/about', '0.9', 'monthly'],
-    ['/work', '0.9', 'monthly'],
-    ['/projects', '0.9', 'weekly'],
-    ['/writing', '0.9', 'weekly'],
-    ['/now', '0.8', 'weekly'],
-    ['/contact', '0.8', 'monthly']
-  ];
-  const today = '2026-02-18';
+  const staticPages = ['/', '/about', '/work', '/projects', '/writing', '/now', '/contact'];
+  const today = '2026-11-24';
   const urls = [];
 
-  for (const [p, prio, freq] of staticPages) {
+  for (const p of staticPages) {
     urls.push(`  <url>
     <loc>${siteUrl}${p}</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>${freq}</changefreq>
-    <priority>${prio}</priority>
   </url>`);
   }
 
@@ -273,17 +263,13 @@ function buildSitemapXml(siteUrl, posts, projects) {
     urls.push(`  <url>
     <loc>${siteUrl}/projects/${esc(pr.slug)}</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>`);
   }
 
   for (const post of posts.filter((x) => x.published !== false)) {
     urls.push(`  <url>
     <loc>${siteUrl}/writing/${esc(post.slug)}</loc>
-    <lastmod>${esc(post.date || today)}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>${esc(post.lastmod || today)}</lastmod>
   </url>`);
   }
 

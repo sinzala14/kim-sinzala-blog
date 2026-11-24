@@ -2,86 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/about</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/work</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/projects</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/writing</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/now</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/contact</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/projects/techback</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/projects/access-point</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/projects/link-mine</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/projects/tripper</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/writing/why-broken-technology-still-has-value</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/writing/the-difference-between-coding-and-engineering</loc>
-    <lastmod>2026-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://kim-sinzala-blog.voxreadstudio.workers.dev/writing/why-i-prefer-building-prototypes</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
 </urlset>

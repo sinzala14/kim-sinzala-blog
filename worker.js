@@ -79,8 +79,7 @@ export default {
         status: 200,
         headers: {
           'content-type': 'application/xml; charset=utf-8',
-          'cache-control': 'no-cache, no-store, must-revalidate',
-          'x-robots-tag': 'noindex'
+          'cache-control': 'no-cache, no-store, must-revalidate'
         }
       });
     }
