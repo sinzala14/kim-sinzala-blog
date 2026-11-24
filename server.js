@@ -58,9 +58,10 @@ app.get('/robots.txt', (req, res) => {
   res.type('text/plain').send(seo.buildRobotsTxt(SITE_URL));
 });
 
-app.get('/sitemap.xml', (req, res) => {
+app.get(['/sitemap.xml', '/sitemap-index.xml'], (req, res) => {
   const posts = readJSON('posts.json');
   const projects = readJSON('projects.json');
+  res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.type('application/xml').send(seo.buildSitemapXml(SITE_URL, posts, projects));
 });
 

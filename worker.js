@@ -74,10 +74,14 @@ export default {
       });
     }
 
-    if (pathname === '/sitemap.xml') {
+    if (pathname === '/sitemap.xml' || pathname === '/sitemap-index.xml') {
       return new Response(seo.buildSitemapXml(siteUrl, publishedPosts, projects), {
         status: 200,
-        headers: { 'content-type': 'application/xml; charset=utf-8' }
+        headers: {
+          'content-type': 'application/xml; charset=utf-8',
+          'cache-control': 'no-cache, no-store, must-revalidate',
+          'x-robots-tag': 'noindex'
+        }
       });
     }
 
