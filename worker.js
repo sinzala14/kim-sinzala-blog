@@ -61,7 +61,10 @@ export default {
 
     if (assetPath) {
       const assetUrl = new URL(assetPath, request.url);
-      const res = await env.ASSETS.fetch(new Request(assetUrl, request));
+      let res = await env.ASSETS.fetch(new Request(assetUrl.toString()));
+      if (!res.ok) {
+        res = await env.ASSETS.fetch(new Request(new URL(assetPath.replace(/\.html$/, ''), request.url).toString()));
+      }
       if (!res.ok) {
         return new Response('Not found', { status: 404 });
       }
