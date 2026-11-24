@@ -1,0 +1,7 @@
+[
+{"title":"TechBack","category":"Circular technology","description":"Recovering value from unwanted, damaged or unused technology: repair, refurbishment, resale, device lifecycle, e-waste.","tech":["Web","Flutter","PostgreSQL"],"status":"Active","kind":"FACT","year":"YEAR","link":"https://techback.voxreadstudio.workers.dev","github":""},
+{"title":"Access Point","category":"Technology business","description":"A technology and computing business providing technology and digital solutions.","tech":["PHP","MySQL","Flutter"],"status":"Active / evolving","kind":"FACT","year":"YEAR","link":"#","github":""},
+{"title":"Link Mine","category":"Mining safety R&D","description":"Mining safety and communication concept: AI/ML, IoT sensors, mesh/radio communication and edge computing.","tech":["AI/ML","IoT","Edge"],"status":"Research / R&D","kind":"EXPERIMENT","year":"YEAR","link":"#","github":""},
+{"title":"Tripper","category":"Travel technology","description":"Connecting local accommodation with corporate travel needs.","tech":["Web"],"status":"Prototype / project","kind":"EXPERIMENT","year":"YEAR","link":"#","github":""},
+{"title":"Personal Experiments","category":"Lab","description":"Add new experiments by appending an object to data/projects.json.","tech":["Anything"],"status":"Open","kind":"ASPIRATION","year":"YEAR","link":"#","github":""}
+]

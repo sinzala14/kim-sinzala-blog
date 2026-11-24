@@ -1,0 +1,64 @@
+@keyframes frame {
+  50% { inset: -20px; opacity: 0.35; }
+}
+
+@keyframes morph {
+  0% { border-radius: 44% 56% 48% 52% / 38% 42% 58% 62%; }
+  50% { border-radius: 54% 46% 42% 58% / 48% 54% 46% 52%; }
+  100% { border-radius: 40% 60% 54% 46% / 44% 38% 62% 56%; }
+}
+
+@keyframes enter {
+  from { opacity: 0; transform: translateY(20px) scale(0.99); }
+  to { opacity: 1; transform: none; }
+}
+
+.enter {
+  animation: enter 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.enter:nth-child(2) { animation-delay: 0.08s; }
+.enter:nth-child(3) { animation-delay: 0.16s; }
+.enter:nth-child(4) { animation-delay: 0.24s; }
+.enter:nth-child(5) { animation-delay: 0.32s; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+#glow {
+  position: fixed;
+  width: 440px;
+  height: 440px;
+  margin: -220px 0 0 -220px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(214, 104, 59, 0.08) 0%, rgba(44, 110, 73, 0.06) 40%, transparent 70%);
+}
+
+.btn.mag {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  #glow, #net {
+    display: none;
+  }
+}
